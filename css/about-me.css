@@ -1,0 +1,65 @@
+
+
+#background{
+    height: 230vh;
+    overflow: hidden;
+}
+
+#my-details{
+    display: grid;
+    grid-template-columns: 1fr; /* Ajusta según tus necesidades */
+    min-width: 340px;
+}
+
+.detail {
+    justify-self: center;
+    background-color: var(--third-color);
+    display: grid;
+    grid-template-columns: 1fr; /* Ajusta según tus necesidades */
+    grid-template-rows: 2fr;
+    gap: 20px; 
+    transition: height 0.3s ease;
+    overflow: hidden;
+    width: 75%; /* 3/4 del ancho del contenedor */
+    gap: 20px; /* Espacio entre los elementos */
+    margin: 20px 0;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+#icons{
+    font-size: 1.50rem; /* Tamaño de fuente típico de un h3 */
+    font-weight: bold; /* Peso de la fuente */
+    gap: 20px; /* Espacio entre los elementos */
+    display: block;
+    text-transform: uppercase;
+}
+
+#art{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 1.50rem; /* Tamaño de fuente típico de un h3 */
+    font-weight: bold; /* Peso de la fuente */
+    gap: 20px; /* Espacio entre los elementos */
+    text-transform: uppercase;
+}
+
+#art .fa-instagram{
+    transition: transform 0.5s ease;
+}
+#art .fa-twitter{
+    transition: transform 0.5s ease;    
+}
+#art .fa-instagram:hover{
+    transform: rotate(-15deg);
+}
+#art .fa-twitter:hover{
+    transform: rotate(-15deg);
+}
+
+.img{
+    display: grid;
+    place-items: center; /* Centra horizontal y verticalmente */
+    gap: 20px;
+}

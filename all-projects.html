@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/projects.css">
+    <link rel="stylesheet" href="./css/project-filter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"> 
+    <title>Proyectos</title>
+</head>
+<body>
+    <div class="projects-bg" id="background"></div>
+    <section id="container">
+        <div class="search_bar ">
+            <input type="text" id="search-input" placeholder="Buscar proyecto...">
+        </div>
+        <div class="presentation-buttons">
+            <span>Filtros de Busqueda</span>
+            <div class="filter-buttons ">
+                <button class="filter-btn button-structure button" data-icon="fa-gamepad" title="Videojuego"><i class="fa-solid fa-gamepad"></i></button>
+                <button class="filter-btn button-structure button" data-icon="fa-file" title="Página web"><i class="fa-solid fa-file"></i></button>
+                <button class="filter-btn button-structure button" data-icon="fa-unity" title="Unity"><i class="fa-brands fa-unity"></i></button>
+                <button class="filter-btn button-structure button" data-icon="fa-js" title="JavaScript"><i class="fa-brands fa-js"></i></button>
+                <button class="filter-btn button-structure button" data-icon="fa-html5" title="HTML"><i class="fa-brands fa-html5"></i></button>
+                <button class="filter-btn button-structure button" data-icon="fa-java" title="Java"><i class="fa-brands fa-java"></i></button>
+                <button class="filter-btn button-structure button" data-icon="fa-code" title="Otros Lenguajes"><i class="fa-solid fa-code"></i> </button>
+            </div>
+        </div>
+
+        
+        <!-- Mostrando Proyectos -->
+        <div class="main-projects presentation">
+            <h1 id="title-projects">Proyectos</h1>
+                <div class="project presentation" data-icons="fa-file fa-js fa-html5">
+                    <span class="project-name">Portafolio Personal</span>
+                    <img src="./assets/images/ProyectoPortafolio.png" width="300" class="project-content">
+                    <div class="project-description">
+                        Esta misma pagina web es mi primer proyecto en camino a ser finalizado, busco mostrar
+                        mis habilidades tanto de programación como imaginativas para la creación de la misma.
+                        <p></p>
+                        Cuenta con varias funcionalidades, como pausar la generación de figuras del fondo,
+                        cambiar el tema de las paginas, secciones expandibles entre otros.
+                    </div>
+                    <div class="details">
+                        <a class="pdf" href="./404.html" target="_blank">Documentacion</a>
+                        <div class="type">
+                            <span class="type-h3">Especificaciones</span>
+                            <p></p>
+                            <i class="fa-solid fa-file" title="Pagina web"></i>
+                            <p></p>
+                            <span class="type-h3">Lenguajes</span>
+                            <p></p>
+                            <i class="fa-brands fa-js" title="JavaScript"></i>
+                            <i class="fa-brands fa-html5" title="Html"></i>
+                        </div>
+                    </div>
+                    <i class="fa-regular fa-eye" title="Ver más"></i>
+                </div>
+
+
+            
+        </div>
+    </section>
+    <!-- Botones Flotantes -->
+    <button id="switch-theme" class="button button-structure">
+        <i id="theme-icon" class="fa-regular"></i>
+    </button>
+    <button id="toggle-animation" class="button button-structure">
+        <i class="fas fa-pause"></i>
+    </button>
+    <a href="./index.html">
+        <button id="home" class="button button-structure ">
+            <i class="fa-solid fa-house-chimney"></i>
+        </button>
+    </a>
+    <script src="js/system.js" type="module"></script>
+    <script src="js/project-description.js"></script>
+    <script src="js/project-filter.js"></script>
+</body>
+</html>

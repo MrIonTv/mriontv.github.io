@@ -1,0 +1,94 @@
+/* Proyectos */
+#title-projects {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main-projects {
+    display: grid;
+    grid-template-columns: 1fr; /* Ajusta según tus necesidades */
+}
+
+.project {
+    justify-self: center;
+    background-color: var(--third-color);
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 2fr;
+    gap: 20px; 
+    transition: height 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.04);
+}
+.project-content {
+    grid-column: 1 / 2; /* Primera columna */
+}
+
+.project-name {
+    grid-column: 1 / 2; /* Primera columna */
+    display: block;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.details {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.type {
+    font-size: 1.50rem; /* Tamaño de fuente típico de un h3 */
+    font-weight: bold; /* Peso de la fuente */
+    margin: 1em 0; /* Espaciado alrededor */
+    display: block;
+    text-transform: uppercase;
+}
+
+.fa-eye {
+    grid-column: 1 / 2; /* Primera columna */
+
+}
+
+.type-h3 {
+    font-size: 1.10rem
+}
+
+
+@media (max-width: 1020px) {
+    .project {
+        grid-template-columns: 1fr;
+    }
+    .project-name {
+        grid-column: 1 / 1; /* Primera columna */
+        display: block;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .project-content {
+        margin: auto;
+        text-align: center;
+        grid-column: 1 / 1; /* Primera columna */
+    }
+    
+    .project-description {
+        grid-column: 1 / 1; /* Primera columna */
+        color: var(--text-color);
+    }
+}
+
+.projects-bg {
+    overflow: flex;
+
+}

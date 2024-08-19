@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/projects.css">
+    <link rel="stylesheet" href="./assets/images/csharp-icon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"> 
+    <title>MrIonTv</title>
+</head>
+<body>
+    <div id="background"></div>
+    <section id="container">
+        <!-- Mi perfil -->
+        <div class="presentation">
+            <div id="profile-shape">
+                <img src="assets/images/perfil.jpg" alt="" id="profile-photo">
+            </div>
+            <h2 id="my-name">Ion Dolanescu</h2>
+            <b></b>
+            <h3 id="arroba">mriontv</h3>
+            <b></b>
+            <div id="my-description">
+                Soy un estudiante de Ingeniería en Computación en el ITCR, busco el conocimiento para crear programas
+                y mundos de videojuegos increibles.
+            </div>
+        </div>
+        <!-- Proyectos Principales -->
+        <div class="main-projects presentation">
+            <h1 id="title-projects">Principales Proyectos</h1>
+            <div class="project presentation">
+                <span class="project-name">Portafolio Personal</span>
+                <img src="./assets/images/ProyectoPortafolio.png" width="300" class="project-content">
+                <div class="project-description">
+                    Esta misma pagina web es mi primer proyecto en camino a ser finalizado, busco mostrar
+                    mis habilidades tanto de programación como imaginativas para la creación de la misma.
+                    <p></p>
+                    Cuenta con varias funcionalidades, como pausar la generación de figuras del fondo,
+                    cambiar el tema de las paginas, secciones expandibles entre otros.
+                </div>
+                <div class="details">
+                    <a class="pdf" href="./404.html" target="_blank">Documentacion</a>
+                    <div class="type">
+                        <span class="type-h3">Contenido</span>
+                        <p></p>
+                        <i class="fa-solid fa-file" title="Pagina web"></i>
+                        <p></p>
+                        <span class="type-h3">Lenguajes</span>
+                        <p></p>
+                        <i class="fa-brands fa-js" title="JavaScript"></i>
+                        <i class="fa-brands fa-html5" title="Html"></i>
+                    </div>
+                </div>
+                <i class="fa-regular fa-eye" title="Ver más"></i>
+            </div>
+        </div>
+        <!-- Otros Enlaces -->
+        <div id="others" class="presentation">
+            <div class="presentation others-presentation">
+                <a href="./all-projects.html">
+                    <button id="all-my-work" class="button button-structure others-button">
+                        <i class="fa-solid fa-notes-medical"></i>
+                    </button>
+                </a>
+                <span>Todos Mis Proyectos</span>
+            </div>      
+            <div class="presentation others-presentation">
+                <a href="./about-me.html">
+                    <button  id="about-me" class="button button-structure others-button">
+                        <i class="fa-regular fa-user"></i>
+                    </button>
+                </a>
+                <span class="others-span">Sobre Mi</span>
+            </div>
+            <div class="presentation others-presentation">
+                <a href="./contact.html">
+                    <button id="contact" class="button button-structure others-button">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </a>
+                <span class="others-span">Contacto</span>
+            </div>
+        </div>
+    </section>
+    <!-- Botones Flotantes -->
+    <button id="switch-theme" class="button button-structure">
+        <i id="theme-icon" class="fa-regular"></i>
+    </button>
+    <button id="toggle-animation" class="button button-structure">
+        <i class="fas fa-pause"></i>
+    </button>
+    
+    <script src="js/system.js" type="module"></script>
+    <script src="js/project-description.js"></script>
+</body>
+</html>

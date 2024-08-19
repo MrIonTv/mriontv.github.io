@@ -1,0 +1,78 @@
+
+.filter-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Ajusta según tus necesidades */
+    margin: 20px;
+}
+
+.presentation-buttons {
+    width: 75%; /* 3/4 del ancho del contenedor */
+    display: block;
+    grid-template-columns: 100px 1fr; /* Ajusta según tus necesidades */
+    gap: 20px; /* Espacio entre los elementos */
+    margin: 20px 0;
+    border: 1px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 20px;
+    transition: .3s;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.filter-btn {
+    color: black;
+    display: flex;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.filter-btn i {
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.filter-btn.active {
+    color: var(--text-color);
+}
+
+.item {
+    margin: 10px;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.search-bar {
+    display: flex; /* O usa display: grid; para la opción de grid */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+}
+
+/* Input de búsqueda */
+#search-input {
+    width: 100%; /* Ajusta el tamaño según lo necesites */
+    max-width: 500px; /* Limita el tamaño máximo del input */
+    gap: 20px;
+    border: 1px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 10px;
+    transition: .3s;
+    align-items: center;
+    text-align: center;
+}
+
+.presentation span {
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+
+}
+
